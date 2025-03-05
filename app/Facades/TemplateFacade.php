@@ -5,7 +5,7 @@ namespace App\Facades;
 use App\Services\TemplateService;
 use Illuminate\Support\Facades\Facade;
 
-class TemplateFacade extends Facade
+class Template extends Facade
 {
     public static function getFacadeAccessor(): string
     {
