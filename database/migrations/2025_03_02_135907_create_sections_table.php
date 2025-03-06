@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('slug')->unique()->index();
+            $table->string('blade');
             $table->jsonb('data')->nullable();
             $table->timestamps();
         });
@@ -36,7 +37,6 @@ return new class extends Migration
                 ->constrained('templates')
                 ->cascadeOnDelete();
             $table->unsignedInteger('order');
-            $table->timestamps();
         });
     }
 

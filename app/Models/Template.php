@@ -14,6 +14,6 @@ class Template extends Model
 
     public function sections(): BelongsToMany
     {
-       return $this->belongsToMany(Section::class, 'section_template');
+       return $this->belongsToMany(Section::class);
     }
 }
